@@ -24,7 +24,7 @@ test("Register New User", async ({ page }) => {
 
 });
 
-test.only("E2E Purchase Flow", async ({ page }) => {
+test("E2E Purchase Flow", async ({ page }) => {
     await page.goto("https://rahulshettyacademy.com/client/#/auth/login");
     await page.locator('input[type="email"]').fill('alexsmith77@example.com');
     await page.locator('input[type="password"]').fill('Test@1234');
