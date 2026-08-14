@@ -9,5 +9,4 @@ test('Add product to cart', async ({ page }) => {
     await loginPage.goTo();
     await loginPage.login('alexsmith77@example.com','Test@1234');
     await dashboardPage.addProductToCart('ZARA COAT 3');
-    await page.pause();
 });

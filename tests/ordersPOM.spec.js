@@ -23,5 +23,4 @@ test('Navigate to Orders Page', async ({ page }) => {
     await checkoutPage.fillPaymentDetails('02','27','123','Rahul Sharma','rahulshettyacademy');
     await checkoutPage.placeOrder();
     await ordersPage.goToOrders();
-    await page.pause();
 });

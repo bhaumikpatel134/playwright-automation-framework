@@ -27,5 +27,4 @@ test('Complete Purchase Flow Using POM', async ({ page }) => {
     await checkoutPage.selectCountry('Ind');
     await checkoutPage.fillPaymentDetails('02','27','123','Rahul Sharma','rahulshettyacademy');
     await checkoutPage.placeOrder();
-    await page.pause();
 });

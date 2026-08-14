@@ -14,5 +14,4 @@ test('Add product and navigate to checkout', async ({ page }) => {
     await dashboardPage.addProductToCart('ZARA COAT 3');
     await cartPage.goToCart();
     await cartPage.checkout();
-    await page.pause();
 });

@@ -93,5 +93,4 @@ test("E2E Purchase Flow", async ({ page }) => {
         }
         break;
     }
-    await page.pause();
 });
