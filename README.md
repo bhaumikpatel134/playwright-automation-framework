@@ -122,7 +122,7 @@ npx playwright test
 Run a specific test:
 
 ```bash
-npx playwright test tests/checkoutPOM.spec.js --headed
+npx playwright test tests/ordersPOM.spec.js --headed
 ```
 
 Run Chromium:
