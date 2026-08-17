@@ -56,7 +56,7 @@ test("E2E Purchase Flow", async ({ page }) => {
     console.log(await toast.innerText());
     await expect(toast).toBeVisible();
     await page.locator("button[routerlink='/dashboard/cart']").click();
-    await page.locator('text= Buy Now').click();
+    await page.getByRole('button', {name: 'Buy Now❯'}).click();
     const email = page.locator('input.input.txt.text-validated.ng-pristine');
     console.log(await email.inputValue());
     await expect(email).toBeVisible();

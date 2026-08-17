@@ -6,7 +6,7 @@ const { CartPage } = require('../pages/CartPage');
 const { CheckoutPage } = require('../pages/CheckoutPage');
 const { OrdersPage } = require('../pages/OrdersPage');
 
-test('Navigate to Orders Page', async ({ page }) => {
+test('Complete login to order flow', async ({ page }) => {
 
     const loginPage = new LoginPage(page);
     const dashboardPage = new DashboardPage(page);

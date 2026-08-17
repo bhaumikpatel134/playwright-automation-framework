@@ -5,7 +5,7 @@ const { DashboardPage } = require('../pages/DashboardPage');
 const { CartPage } = require('../pages/CartPage');
 const { CheckoutPage } = require('../pages/CheckoutPage');
 
-test('Complete Purchase Flow Using POM', async ({ page }) => {
+test('Complete Purchase Flow', async ({ page }) => {
 
     const loginPage = new LoginPage(page);
     const dashboardPage = new DashboardPage(page);

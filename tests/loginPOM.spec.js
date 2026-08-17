@@ -1,7 +1,7 @@
 const { test } = require('@playwright/test');
 const { LoginPage } = require('../pages/LoginPage');
 
-test('Login using POM', async ({ page }) => {
+test('Login with correct email and password', async ({ page }) => {
 
     const loginPage = new LoginPage(page);
     await loginPage.goTo();
