@@ -66,7 +66,7 @@ test("E2E Purchase Flow", async ({ page }) => {
     await page.locator('select.input.ddl').first().selectOption('02');
     await page.locator('select.input.ddl').last().selectOption('27');
     await page.locator('input.input.txt').nth(1).type('123');
-    await page.locator('input.input.txt').nth(2).type('Rahul Gandu');
+    await page.locator('input.input.txt').nth(2).type('Rahul Rana');
     await page.locator('input.input.txt').nth(3).type('rahulshettyacademy');
     await page.locator('button[type="submit"]').click();
     const cuppon_code = console.log(await page.locator('.mt-1.ng-star-inserted').textContent());
